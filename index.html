@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Bouquet for You</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Quicksand:wght@300;400;500&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon (emoji bunga) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+
+    <!-- Floating Petals Background -->
+    <div class="petals-container" id="petals"></div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <button id="playBtn" class="play-btn" aria-label="Play music">
+            <svg id="playIcon" viewBox="0 0 24 24" width="20" height="20">
+                <path d="M8 5v14l11-7z" fill="currentColor"/>
+            </svg>
+            <svg id="pauseIcon" viewBox="0 0 24 24" width="20" height="20" style="display:none">
+                <path d="M6 5h4v14H6zm8 0h4v14h-4z" fill="currentColor"/>
+            </svg>
+        </button>
+        <div class="music-info">
+            <span class="music-title">♪ our song ♪</span>
+        </div>
+        <audio id="bgMusic" loop>
+            <source src="music.mp3" type="audio/mpeg">
+            <!-- Ganti "music.mp3" dengan nama file lagumu -->
+        </audio>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle fade-in">for you, with love</p>
+            <h1 class="title fade-in-delay">
+                <span class="letter">A</span>
+                <span class="letter">&nbsp;</span>
+                <span class="letter">B</span>
+                <span class="letter">o</span>
+                <span class="letter">u</span>
+                <span class="letter">q</span>
+                <span class="letter">u</span>
+                <span class="letter">e</span>
+                <span class="letter">t</span>
+                <span class="letter">&nbsp;</span>
+                <span class="letter">o</span>
+                <span class="letter">f</span>
+                <span class="letter">&nbsp;</span>
+                <span class="letter">F</span>
+                <span class="letter">l</span>
+                <span class="letter">o</span>
+                <span class="letter">w</span>
+                <span class="letter">e</span>
+                <span class="letter">r</span>
+                <span class="letter">s</span>
+            </h1>
+            <p class="tagline fade-in-late">setiap kelopaknya adalah permintaan maaf</p>
+        </div>
+
+        <!-- Bouquet -->
+        <div class="bouquet-wrapper">
+            <div class="bouquet-glow"></div>
+            <div class="bouquet">💐</div>
+        </div>
+
+        <div class="scroll-hint">
+            <span>scroll down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============ LETTER SECTION ============ -->
+    <section class="letter-section">
+        <!-- Envelope -->
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body"></div>
+            <div class="envelope-heart">♥</div>
+        </div>
+
+        <!-- Letter -->
+        <div class="letter" id="letter">
+            <div class="letter-paper">
+                <div class="letter-header">
+                    <span class="date">Dear Kaia,</span>
+                </div>
+                <div class="letter-body">
+                    <p>
+                        I built this for you. I wanted to give you something that
+                        actually took effort. Something that shows you how much
+                        I care, even when I'm bad at showing it.
+                    </p>
+                    <p>
+                        I'm sorry. For not being the best boyfriend.
+                        For not replying when you needed me.
+                        For joking around when you were hurting.
+                        For making you feel like you had to carry things alone.
+                        I'm so fucking bad at treating you, I admit it.
+                    </p>
+                    <p>
+                        You deserve someone who listens, who shows up,
+                        who pays attention. I know I'm not perfect. I mess up,
+                        I get distracted, I say the wrong things. But I'm trying.
+                        I'll keep trying. For you. For us.
+                    </p>
+                    <p>
+                        I do love you, Kaia. More than I'll be able to explain.
+                        So here's my apology, I'm sorry for the times I made
+                        you feel otherwise.
+                    </p>
+                    <p class="closing">
+                        With all my love,<br>
+                        <span class="signature">— Judd Hals ♡</span>
+                    </p>
+                </div>
+                <div class="letter-decoration">🌷</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <p>made with <span class="heart-beat">🤍</span> and petals</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
