@@ -1,30 +1,3 @@
-// ============ FLOATING PETALS ============
-const petalsContainer = document.getElementById('petals');
-const petalEmojis = ['🌸', '🌷', '🌺', '💮', '🌹', '✿', '❀', '♡'];
-
-function createPetal() {
-    const petal = document.createElement('div');
-    petal.className = 'petal';
-    petal.textContent = petalEmojis[Math.floor(Math.random() * petalEmojis.length)];
-    petal.style.left = Math.random() * 100 + '%';
-    petal.style.fontSize = (Math.random() * 1.2 + 0.8) + 'rem';
-    petal.style.animationDuration = (Math.random() * 8 + 8) + 's';
-    petal.style.animationDelay = Math.random() * 5 + 's';
-    petal.style.opacity = Math.random() * 0.5 + 0.4;
-    petalsContainer.appendChild(petal);
-
-    // Remove after animation to prevent memory build-up
-    setTimeout(() => petal.remove(), 18000);
-}
-
-// Initial petals burst
-for (let i = 0; i < 18; i++) {
-    setTimeout(createPetal, i * 400);
-}
-
-// Continuous petals
-setInterval(createPetal, 1500);
-
 // ============ MUSIC PLAYER ============
 const playBtn = document.getElementById('playBtn');
 const bgMusic = document.getElementById('bgMusic');
@@ -70,7 +43,7 @@ function openLetter() {
 
 envelope.addEventListener('click', openLetter);
 
-// Auto-open when scrolled into view
+// Auto-open saat section surat terlihat di layar
 const letterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting && !opened) {
