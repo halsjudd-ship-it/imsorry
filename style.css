@@ -174,27 +174,29 @@ body {
     }
 }
 
-/* Staggered letter animation */
-.title .letter:nth-child(1)  { animation-delay: 0.05s; }
-.title .letter:nth-child(2)  { animation-delay: 0.10s; }
-.title .letter:nth-child(3)  { animation-delay: 0.15s; }
-.title .letter:nth-child(4)  { animation-delay: 0.20s; }
-.title .letter:nth-child(5)  { animation-delay: 0.25s; }
-.title .letter:nth-child(6)  { animation-delay: 0.30s; }
-.title .letter:nth-child(7)  { animation-delay: 0.35s; }
-.title .letter:nth-child(8)  { animation-delay: 0.40s; }
-.title .letter:nth-child(9)  { animation-delay: 0.45s; }
-.title .letter:nth-child(10) { animation-delay: 0.50s; }
-.title .letter:nth-child(11) { animation-delay: 0.55s; }
-.title .letter:nth-child(12) { animation-delay: 0.60s; }
-.title .letter:nth-child(13) { animation-delay: 0.65s; }
-.title .letter:nth-child(14) { animation-delay: 0.70s; }
-.title .letter:nth-child(15) { animation-delay: 0.75s; }
-.title .letter:nth-child(16) { animation-delay: 0.80s; }
-.title .letter:nth-child(17) { animation-delay: 0.85s; }
-.title .letter:nth-child(18) { animation-delay: 0.90s; }
-.title .letter:nth-child(19) { animation-delay: 0.95s; }
-.title .letter:nth-child(20) { animation-delay: 1.00s; }
+/* Staggered word animation */
+.title .word:nth-child(1) .letter { animation-delay: 0.1s; }
+.title .word:nth-child(1) .letter:nth-child(1) { animation-delay: 0.10s; }
+.title .word:nth-child(1) .letter:nth-child(2) { animation-delay: 0.15s; }
+
+.title .word:nth-child(2) .letter:nth-child(1) { animation-delay: 0.25s; }
+.title .word:nth-child(2) .letter:nth-child(2) { animation-delay: 0.30s; }
+.title .word:nth-child(2) .letter:nth-child(3) { animation-delay: 0.35s; }
+.title .word:nth-child(2) .letter:nth-child(4) { animation-delay: 0.40s; }
+.title .word:nth-child(2) .letter:nth-child(5) { animation-delay: 0.45s; }
+.title .word:nth-child(2) .letter:nth-child(6) { animation-delay: 0.50s; }
+.title .word:nth-child(2) .letter:nth-child(7) { animation-delay: 0.55s; }
+
+.title .word:nth-child(3) .letter:nth-child(1) { animation-delay: 0.65s; }
+.title .word:nth-child(3) .letter:nth-child(2) { animation-delay: 0.70s; }
+
+.title .word:nth-child(4) .letter:nth-child(1) { animation-delay: 0.80s; }
+.title .word:nth-child(4) .letter:nth-child(2) { animation-delay: 0.85s; }
+.title .word:nth-child(4) .letter:nth-child(3) { animation-delay: 0.90s; }
+.title .word:nth-child(4) .letter:nth-child(4) { animation-delay: 0.95s; }
+.title .word:nth-child(4) .letter:nth-child(5) { animation-delay: 1.00s; }
+.title .word:nth-child(4) .letter:nth-child(6) { animation-delay: 1.05s; }
+.title .word:nth-child(4) .letter:nth-child(7) { animation-delay: 1.10s; }
 
 .fade-in {
     opacity: 0;
