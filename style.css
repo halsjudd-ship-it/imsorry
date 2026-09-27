@@ -238,12 +238,18 @@ body {
     50%      { transform: scale(1.15); opacity: 1; }
 }
 
-.bouquet {
-    font-size: clamp(6rem, 15vw, 10rem);
+.bouquet-svg {
+    width: clamp(280px, 60vw, 420px);
+    height: auto;
     animation: bouquetFloat 4s ease-in-out infinite;
-    filter: drop-shadow(0 15px 30px rgba(232, 165, 184, 0.5));
+    filter: drop-shadow(0 20px 40px rgba(232, 165, 184, 0.45));
     position: relative;
     z-index: 2;
+}
+
+/* Hapus style .bouquet lama, atau biarkan jika tidak dipakai */
+.bouquet {
+    display: none;
 }
 
 @keyframes bouquetFloat {
