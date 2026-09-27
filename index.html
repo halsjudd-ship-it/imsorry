@@ -69,10 +69,172 @@
             <p class="tagline fade-in-late">setiap kelopaknya adalah permintaan maaf</p>
         </div>
 
-        <!-- Bouquet -->
-        <div class="bouquet-wrapper">
-            <div class="bouquet-glow"></div>
-            <div class="bouquet">💐</div>
+                <!-- Bouquet -->
+                 <div class="bouquet-wrapper">
+                    <div class="bouquet-glow"></div>
+                    
+                    <svg class="bouquet-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" aria-label="Bouquet of flowers">
+                        <defs>
+                            
+                    <!-- Gradients -->
+                    <radialGradient id="roseRed" cx="50%" cy="40%">
+                        <stop offset="0%" stop-color="#ff8fab"/>
+                        <stop offset="60%" stop-color="#e8467c"/>
+                        <stop offset="100%" stop-color="#a8235a"/>
+                    </radialGradient>
+                    <radialGradient id="rosePink" cx="50%" cy="40%">
+                        <stop offset="0%" stop-color="#ffd9e8"/>
+                        <stop offset="60%" stop-color="#ff9ec4"/>
+                        <stop offset="100%" stop-color="#c9849c"/>
+                    </radialGradient>
+                    <radialGradient id="tulipYellow" cx="50%" cy="40%">
+                        <stop offset="0%" stop-color="#fff3a8"/>
+                        <stop offset="60%" stop-color="#ffd93d"/>
+                        <stop offset="100%" stop-color="#e0a800"/>
+                    </radialGradient>
+                    <radialGradient id="tulipPink" cx="50%" cy="40%">
+                        <stop offset="0%" stop-color="#ffc2dc"/>
+                        <stop offset="60%" stop-color="#ff7eb3"/>
+                        <stop offset="100%" stop-color="#c94e85"/>
+                    </radialGradient>
+                    <radialGradient id="orchidPurple" cx="50%" cy="40%">
+                        <stop offset="0%" stop-color="#e8d1ff"/>
+                        <stop offset="60%" stop-color="#b587ea"/>
+                        <stop offset="100%" stop-color="#7d4cb5"/>
+                    </radialGradient>
+                    <radialGradient id="orchidCore" cx="50%" cy="50%">
+                        <stop offset="0%" stop-color="#fff5b8"/>
+                        <stop offset="100%" stop-color="#ffb84d"/>
+                    </radialGradient>
+                    <linearGradient id="stemGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#88c47a"/>
+                        <stop offset="100%" stop-color="#4a7f3f"/>
+                    </linearGradient>
+                    <linearGradient id="ribbonPink" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#ffb6d0"/>
+                        <stop offset="100%" stop-color="#e05c8a"/>
+                    </linearGradient>
+                    <linearGradient id="ribbonDark" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#e05c8a"/>
+                        <stop offset="100%" stop-color="#a8235a"/>
+                    </linearGradient>
+                    <linearGradient id="wrapPaper" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#fff9f5"/>
+                        <stop offset="100%" stop-color="#ffd9e8"/>
+                    </linearGradient>
+                </defs>
+
+                <!-- ===== STEMS (tangkai) ===== -->
+                <g stroke="url(#stemGreen)" stroke-width="5" fill="none" stroke-linecap="round">
+                    <path d="M 200 340 Q 195 400 200 460"/>
+                    <path d="M 200 340 Q 160 400 140 460"/>
+                    <path d="M 200 340 Q 240 400 260 460"/>
+                    <path d="M 200 340 Q 120 380 100 440"/>
+                    <path d="M 200 340 Q 280 380 300 440"/>
+                    <path d="M 200 340 Q 175 400 175 455"/>
+                    <path d="M 200 340 Q 225 400 225 455"/>
+                </g>
+
+                <!-- ===== LEAVES (daun) ===== -->
+                <g fill="#5a9a4d" opacity="0.9">
+                    <path d="M 195 380 Q 140 360 130 400 Q 160 410 195 400 Z"/>
+                    <path d="M 205 380 Q 260 360 270 400 Q 240 410 205 400 Z"/>
+                    <path d="M 190 420 Q 150 410 145 445 Q 170 450 190 435 Z"/>
+                    <path d="M 210 420 Q 250 410 255 445 Q 230 450 210 435 Z"/>
+                    <path d="M 200 440 Q 180 435 178 465 Q 195 468 200 455 Z"/>
+                    <path d="M 200 440 Q 220 435 222 465 Q 205 468 200 455 Z"/>
+                </g>
+                <g fill="#7bc47a" opacity="0.7">
+                    <path d="M 197 385 Q 155 370 145 400 Q 172 405 197 395 Z"/>
+                    <path d="M 203 385 Q 245 370 255 400 Q 228 405 203 395 Z"/>
+                </g>
+
+                <!-- ===== WRAPPING PAPER (kertas buket) ===== -->
+                <path d="M 130 330 L 90 470 Q 200 500 310 470 L 270 330 Z" fill="url(#wrapPaper)" opacity="0.95" stroke="#ffd9e8" stroke-width="1"/>
+                <path d="M 130 330 L 200 380 L 270 330" fill="none" stroke="#f5c8d8" stroke-width="1.5" opacity="0.6"/>
+                <path d="M 110 400 Q 200 430 290 400" fill="none" stroke="#f5c8d8" stroke-width="1" opacity="0.5"/>
+
+                <!-- ===== ROSE 1 (merah, tengah) ===== -->
+                <g transform="translate(200 230)">
+                    <circle r="32" fill="url(#roseRed)"/>
+                    <path d="M -20 -5 Q 0 -25 20 -5 Q 10 10 -20 -5 Z" fill="#a8235a" opacity="0.6"/>
+                    <path d="M -15 8 Q 0 -5 15 8 Q 8 20 -15 8 Z" fill="#a8235a" opacity="0.5"/>
+                    <path d="M -8 -20 Q 0 -30 8 -20 Q 4 -12 -8 -20 Z" fill="#ffb8cf" opacity="0.7"/>
+                    <circle r="7" fill="#7a1a42"/>
+                </g>
+
+                <!-- ===== TULIP 1 (kuning, kiri atas) ===== -->
+                <g transform="translate(140 210)">
+                    <path d="M -25 -5 Q -25 -40 0 -45 Q 25 -40 25 -5 Q 15 15 0 20 Q -15 15 -25 -5 Z" fill="url(#tulipYellow)"/>
+                    <path d="M -15 -5 Q -15 -30 0 -33 Q 15 -30 15 -5 Q 8 8 0 10 Q -8 8 -15 -5 Z" fill="#fff3a8" opacity="0.6"/>
+                    <path d="M 0 -45 Q 3 -35 0 -30" stroke="#e0a800" stroke-width="1" fill="none"/>
+                </g>
+
+                <!-- ===== TULIP 2 (pink, kanan atas) ===== -->
+                <g transform="translate(260 210)">
+                    <path d="M -25 -5 Q -25 -40 0 -45 Q 25 -40 25 -5 Q 15 15 0 20 Q -15 15 -25 -5 Z" fill="url(#tulipPink)"/>
+                    <path d="M -15 -5 Q -15 -30 0 -33 Q 15 -30 15 -5 Q 8 8 0 10 Q -8 8 -15 -5 Z" fill="#ffd9e8" opacity="0.6"/>
+                    <path d="M 0 -45 Q 3 -35 0 -30" stroke="#c94e85" stroke-width="1" fill="none"/>
+                </g>
+
+                <!-- ===== ORCHID (ungu, kiri) ===== -->
+                <g transform="translate(105 260)">
+                    <ellipse cx="-18" cy="-8" rx="14" ry="20" fill="url(#orchidPurple)" transform="rotate(-35 -18 -8)"/>
+                    <ellipse cx="18" cy="-8" rx="14" ry="20" fill="url(#orchidPurple)" transform="rotate(35 18 -8)"/>
+                    <ellipse cx="-12" cy="12" rx="12" ry="16" fill="url(#orchidPurple)" transform="rotate(20 -12 12)"/>
+                    <ellipse cx="12" cy="12" rx="12" ry="16" fill="url(#orchidPurple)" transform="rotate(-20 12 12)"/>
+                    <circle r="8" fill="url(#orchidCore)"/>
+                    <circle r="4" fill="#c9849c"/>
+                </g>
+
+                <!-- ===== ORCHID kecil (kanan) ===== -->
+                <g transform="translate(295 260) scale(0.85)">
+                    <ellipse cx="-18" cy="-8" rx="14" ry="20" fill="url(#orchidPurple)" transform="rotate(-35 -18 -8)"/>
+                    <ellipse cx="18" cy="-8" rx="14" ry="20" fill="url(#orchidPurple)" transform="rotate(35 18 -8)"/>
+                    <ellipse cx="-12" cy="12" rx="12" ry="16" fill="url(#orchidPurple)" transform="rotate(20 -12 12)"/>
+                    <ellipse cx="12" cy="12" rx="12" ry="16" fill="url(#orchidPurple)" transform="rotate(-20 12 12)"/>
+                    <circle r="8" fill="url(#orchidCore)"/>
+                    <circle r="4" fill="#c9849c"/>
+                </g>
+
+                <!-- ===== ROSE 2 (pink, kanan bawah) ===== -->
+                <g transform="translate(265 285) scale(0.8)">
+                    <circle r="32" fill="url(#rosePink)"/>
+                    <path d="M -20 -5 Q 0 -25 20 -5 Q 10 10 -20 -5 Z" fill="#c9849c" opacity="0.6"/>
+                    <path d="M -15 8 Q 0 -5 15 8 Q 8 20 -15 8 Z" fill="#c9849c" opacity="0.5"/>
+                    <circle r="7" fill="#a05878"/>
+                </g>
+
+                <!-- ===== Baby's Breath (bunga kecil putih) ===== -->
+                <g fill="#fff9f5" stroke="#ffd9e8" stroke-width="0.5">
+                    <circle cx="120" cy="180" r="4"/>
+                    <circle cx="128" cy="172" r="3"/>
+                    <circle cx="112" cy="172" r="3"/>
+                    <circle cx="130" cy="188" r="3"/>
+                    <circle cx="280" cy="180" r="4"/>
+                    <circle cx="288" cy="172" r="3"/>
+                    <circle cx="272" cy="172" r="3"/>
+                    <circle cx="290" cy="188" r="3"/>
+                    <circle cx="160" cy="160" r="3.5"/>
+                    <circle cx="240" cy="160" r="3.5"/>
+                    <circle cx="200" cy="150" r="4"/>
+                    <circle cx="185" cy="165" r="3"/>
+                    <circle cx="215" cy="165" r="3"/>
+                </g>
+
+                <!-- ===== RIBBON / PITA ===== -->
+                <!-- Pita tengah -->
+                <ellipse cx="200" cy="465" rx="35" ry="12" fill="url(#ribbonPink)"/>
+                <!-- Simpul -->
+                <ellipse cx="200" cy="465" rx="12" ry="10" fill="url(#ribbonDark)"/>
+                <!-- Ekor pita kiri -->
+                <path d="M 195 465 Q 175 490 165 510 Q 175 505 185 495 Q 190 480 195 470 Z" fill="url(#ribbonPink)"/>
+                <!-- Ekor pita kanan -->
+                <path d="M 205 465 Q 225 490 235 510 Q 225 505 215 495 Q 210 480 205 470 Z" fill="url(#ribbonPink)"/>
+                <!-- Highlight simpul -->
+                <ellipse cx="196" cy="461" rx="4" ry="3" fill="#ffd9e8" opacity="0.8"/>
+
+            </svg>
         </div>
 
         <div class="scroll-hint">
